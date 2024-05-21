@@ -99,7 +99,7 @@ if st.session_state.input_type:
         st.session_state.submitted = True
         st.session_state.more_info_shown = False  # Reset more info shown state
 
-        api_key = "gpt_access_key"
+        api_key = "Your-gpt-api-key"
         openai.api_key = api_key
 
         # Create a prompt for GPT-3.5-turbo to analyze the text
@@ -150,8 +150,8 @@ if st.session_state.input_type:
             client = boto3.client(
                 service_name='comprehendmedical',
                 region_name='us-east-1',
-                aws_access_key_id='access key',
-                aws_secret_access_key='secret key'
+                aws_access_key_id='your-access-key',
+                aws_secret_access_key='your-secrect-access-key'
             )
 
             # Detect entities in the provided text
