@@ -1,0 +1,11 @@
+streamlit
+cv2
+pytesseract
+PIL
+os
+subprocess
+openai
+boto3
+re
+ast
+pandas
